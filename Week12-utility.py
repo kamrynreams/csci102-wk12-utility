@@ -39,3 +39,14 @@ def ScoreFinder(names_list, scores_list, player):
         print("Output %s got a score of %d" %(player , score))
     else:
         print("OUTPUT player not found")
+
+
+def Union(list_one , list_two):
+    index_list = []
+    for i in range(len(list_two)):
+        if list_two[i] in list_one:
+            index_list.append(i)
+    for index in reversed(index_list):
+        del list_two[index]
+    combined_lists = list_one + list_two
+    return(combined_lists)
