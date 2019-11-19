@@ -1,3 +1,9 @@
+#
+#Kamryn Reams
+#CSCI 102 - Section B
+#Week 12 - Part B
+
+
 def PrintOutput(output):
     print("OUTPUT %s" % output)
 
