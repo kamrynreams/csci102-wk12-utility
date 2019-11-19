@@ -61,3 +61,14 @@ def Intersection(list_one, list_two):
     for index in index_list:
         intersection_list.append(list_two[index])
     return(intersection_list)
+
+
+def NotIn(list_one, list_two):
+    index_list = []
+    not_in_list = []
+    for i in range(len(list_one)):
+        if list_one[i] not in list_two:
+            index_list.append(i)
+    for index in index_list:
+        not_in_list.append(list_one[index])
+    return(not_in_list)
