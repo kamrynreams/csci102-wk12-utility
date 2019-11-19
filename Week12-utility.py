@@ -50,3 +50,14 @@ def Union(list_one , list_two):
         del list_two[index]
     combined_lists = list_one + list_two
     return(combined_lists)
+
+
+def Intersection(list_one, list_two):
+    index_list = []
+    intersection_list = []
+    for i in range(len(list_two)):
+        if list_two[i] in list_one:
+            index_list.append(i)
+    for index in index_list:
+        intersection_list.append(list_two[index])
+    return(intersection_list)
