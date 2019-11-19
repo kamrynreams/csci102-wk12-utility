@@ -6,3 +6,12 @@ def LoadFile(filename):
     with open(filename, 'r') as f:
         list = f.readlines()
         return(list)
+
+
+def UpdateString(string, character, index):
+    list = []
+    for letter in string:
+        list.append(letter)
+    list[index] = character
+    updated_string = ''.join(list)
+    print("OUTPUT", updated_string)
